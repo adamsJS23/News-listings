@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 10rem auto;
+  padding: 2rem;
+}
+
+h1.mainhead {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+h1.mainhead::before {
+  content: "N";
+  font-size: 20rem;
+  color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -12rem;
+  left: -3rem;
+}
+
+article h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+article:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 48em) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  article {
+    flex: 1;
+  }
+
+  section article:nth-child(1) {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  section article:nth-child(1) {
+    flex: 1;
+  }
+}
